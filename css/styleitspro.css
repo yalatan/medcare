@@ -226,6 +226,7 @@
             justify-content: center;
             cursor: pointer;
             border: none;
+            outline: none;
         }
         
         .button_blue:hover {
@@ -252,6 +253,7 @@
             background-color: #FFFFFF;
             margin-right: auto;
             margin-left: auto;
+            outline: none;
         }
         
         @keyframes anim {
@@ -1559,6 +1561,10 @@
         
         a:hover .main_text_color,
         a:hover .main_color {
+            color: #01326B;
+        }
+        
+        a.main_color:hover {
             color: #01326B;
         }
         
