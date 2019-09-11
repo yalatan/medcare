@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MEDCARE</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto:300,400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleitspro.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <section class="form_section" id="form_section">
+            <div class="wrapper_form_section wrapper">
+
+                <form class="form" action="#">
+                    <div class="content_form small_text main_text_color">
+                        <label class="form_label" for="name"><p>Имя и Фамилия</p>
+                            <input type="text" placeholder="Василий Иванов" name="name" id="name">
+                        </label>
+                        <label class="country_form  form_label"><p >Страна проживания </p>
+                            <select>
+                                <option disabled selected class="light_color">Выберите страну</option>
+                                <option>Албания</option>
+                                <option >Беларусь</option>
+                                <option>Гондурас</option>
+                                <option>Дания</option>
+                                <option>Малайзия</option>
+                            </select> </label>
+                        <div class="wrap">
+                            <label class="telefone_form  form_label"><p>Номер телефона</p>
+                                <input type="tel" placeholder="+375295012433" name="telefone" pattern='\+{1,1}375[0-9]{6,9}'>
+                            </label>
+                            <label class="email_form  form_label"><p>Адрес e-mail</p>
+                                <input type="email" placeholder="vasily.ivanov@gmail.com" name="email">
+                            </label>
+                        </div>
+                        <label class="service_form form_label"><p>Услуга </p><select>
+                                <option disabled selected class="light_color"> Услуга</option>
+                                <option> Офтальмология</option>
+                                <option> Ортопедия</option>
+                                <option>Стоматология</option>
+                                <option>Диагностика</option>
+                                <option>Урология</option>
+                                <option>Гинекология</option>
+                                <option>Кардиология</option>
+                                <option>Онкология</option>
+                                <option>Спелеолечение</option>
+                                <option>Санаторно-курортное лечение</option>
+                                <option>Пластическая хирургия</option>
+                                <option>Неврология и нейрохирургия</option>
+                                <option>Реабилитация</option>
+                                <option>Оториноларингология</option>
+
+
+                            </select> </label><br>
+                        <label class="textarea_form form_label">Краткое описание заявки <br><textarea
+                                placeholder="Kраткое описание заявки"></textarea></label> <br>
+                        <div class="form_wrap_addinfo">
+                            <a href="#" class="upload_file">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 9V21C10.5 23.25 12.75 25.5 15 25.5C17.25 25.5 19.5 23.25 19.5 21V9H21V21C21 24 18 27 15 27C12 27 9 24 9 21V9V7.5C9 5.25 11.25 3 13.5 3C15.75 3 18 5.25 18 7.5V18V19.5C18 21 16.5 22.5 15 22.5C13.5 22.5 12 21 12 19.5V9H13.5V19.5C13.5 20.25 14.25 21 15 21C15.75 21 16.5 20.25 16.5 19.5V18V9V7.5C16.5 6 15 4.5 13.5 4.5C12 4.5 10.5 6 10.5 7.5V9Z" fill="#3085EA"/>
+                                        </svg>
+
+                                <label class="main_text_color"><input type="file"> Прикрепить файлы </label>
+                            </a>
+                            <div id="info_form" class="info_form">
+                                <div><span class="main_color" id="info_form_text">Дополнительная информация
+                                    </span><br>
+                                    <textarea id="addTextarea" placeholder="Добавить дополнительную информацию"></textarea></div>
+
+                            </div>
+                        </div>
+                        <p class="submit_text_form main_text_color">Отправляя запрос, вы подтверждаете, что ознакомлены и согласны с нашими <a href="#" class="main_color">Условиями Пользования</a> и <a href="#" class="main_color">Политикой Конфиденциальности</a></p>
+
+                        <div class="button_div">
+                            <a href="#">
+                                <buttom class="button_blue">Отправить запрос</button>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                <div class="form_section_text">
+                    <p class="header2 light_color">Оставьте заявку или задайте вопрос</p>
+                    <p class="main_text light_color">Наши специалисты бесплатно проконсультируют Вас по всем вопросам, связанным с лечением и пребыванием в Беларуси.</p>
+                    <p class="main_text light_color"> Все организационные вопросы мы берем на себя.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="js/formOpen.js"></script>
+</body>
+
+</html>
