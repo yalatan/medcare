@@ -6,11 +6,12 @@
 
         $('body .owl-carousel.slideshow').owlCarousel({
             items: 1,
-            loop: true,
+            loop: true
+                /*,
 
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true
+                            autoplay: true,
+                            autoplayTimeout: 2000,
+                            autoplayHoverPause: true*/
         });
         $('body .slide_clinics').owlCarousel({
             loop: true,

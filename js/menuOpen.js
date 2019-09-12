@@ -9,8 +9,9 @@
         };
 
         function menu_open() {
+            console.log($(".header_wrapper").height());
             $("#menu_button_close").fadeIn(800).css("display", "flex");
-            $("#menu_open_wrapper").fadeIn(800);
+            $("#menu_open_wrapper").fadeIn(800).offset({ top: $(".header_wrapper").height() + $(window).scrollTop() });
             $("#menu_button_open").fadeOut(800);
         };
 
@@ -22,6 +23,7 @@
 
         function search_open() {
             $("#search_button_close").fadeIn(800).css("display", "flex");
+            $("#search_open_wrapper").fadeIn(800).offset({ top: $(".header_wrapper").height() + $(window).scrollTop() });
             $("#search_open_wrapper").fadeIn(800);
             $("#search_button_open").fadeOut(800);
         };
