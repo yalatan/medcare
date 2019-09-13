@@ -403,6 +403,8 @@
                 margin-bottom: 26px;
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-end;
             }
             
             .header_navigation .email {
@@ -443,6 +445,7 @@
             
             .header_navigation .menu a:first-child {
                 margin-right: 30px;
+                text-align: center;
             }
             
             .header_navigation .menu .button_blue {
@@ -485,6 +488,8 @@
             .slider_content {
                 margin-top: 230px;
                 width: 780px;
+                margin-right: auto;
+                margin-left: auto;
             }
             
             .slider_content p.main_text {
@@ -1290,7 +1295,7 @@
             
             .about_us .wrapper img {
                 width: 49%;
-                height: auto;
+                height: 100%;
                 max-height: 380px;
                 max-width: 510px;
                 min-width: 290px;
@@ -1573,7 +1578,7 @@
             
             .specialization_article .wrapper img {
                 width: 49%;
-                height: auto;
+                height: 100%;
                 max-height: 510px;
                 max-width: 510px;
                 min-width: 290px;
@@ -1674,6 +1679,157 @@
             @media screen and (min-width: 310px) and (max-width: 1440px) {
                 .item {
                     background-size: auto 100%;
+                }
+            }
+            
+            @media screen and (min-width: 759px) and (max-width: 1060px) {
+                .wrapper {
+                    max-width: 90%;
+                    width: 90%;
+                }
+                .header_wrapper {
+                    width: 90%;
+                }
+                /*why us*/
+                .why_us {
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-top: 40px;
+                }
+                .why_us_section_div {
+                    width: 50%;
+                    min-width: 50%;
+                    margin-bottom: 30px;
+                }
+                .why_us_section {
+                    background-size: auto 100%;
+                }
+                /*specialization*/
+                .specialization_section_div {
+                    width: 33%;
+                    min-width: 159px;
+                }
+                .specialization {
+                    justify-content: space-around;
+                }
+                /*form*/
+                .wrapper_form_section {
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .form {
+                    width: 90%;
+                    order: 1;
+                }
+                .form_section_text {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    min-width: 90%;
+                    margin-bottom: 40px;
+                }
+                .form_section {
+                    padding-top: 0px;
+                }
+                .form input,
+                .form textarea,
+                .form select {
+                    width: 100%;
+                }
+                .wrap label {
+                    width: 100%;
+                }
+                .wrap {
+                    flex-wrap: wrap;
+                }
+                .button_div {
+                    justify-content: center;
+                }
+                .form .button_blue {
+                    width: 70vw;
+                    height: 50px;
+                }
+                .form_wrap_addinfo {
+                    align-items: flex-start;
+                    flex-direction: column;
+                }
+                .info_form {
+                    margin-top: 30px;
+                }
+                /*clinic*/
+                .clinics_section button {
+                    width: 90vw;
+                }
+                .clinics.wrapper {
+                    max-width: 90%;
+                    width: 90%;
+                }
+                .clinics .slide_clinics {
+                    justify-content: space-around;
+                }
+                /*reviews*/
+                .reviews {
+                    width: 100%;
+                }
+                .review .reviews {
+                    justify-content: space-around;
+                    width: 100%;
+                }
+                .reviews_section_div {
+                    width: 30%;
+                }
+                /*faq*/
+                .faq_section.wrapper {
+                    width: 100vw;
+                }
+                .faq_section_div {
+                    width: 90%;
+                    justify-content: center;
+                }
+                .faq_section div {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90vw;
+                }
+                .faq_section_div p {
+                    margin-left: 30px;
+                    width: 90%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .faq_section_buttons {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .faq_section_buttons button {
+                    width: 90vw;
+                    margin-bottom: 20px;
+                }
+                .footer_wrapper {
+                    width: 90%;
+                }
+                .footer_wrapper .header_logo {
+                    display: none;
+                }
+            }
+            
+            @media screen and (min-width: 759px) and (max-width: 1120px) {
+                /*howitwork*/
+                .how_works_section_div {
+                    max-width: 90%;
+                    min-width: 90%;
+                    width: 90%;
+                }
+                .how_work {
+                    justify-content: space-around;
+                }
+                .how_works_section_div {
+                    max-width: 40%;
+                    min-width: 290px;
+                    width: 40%;
                 }
             }
             
