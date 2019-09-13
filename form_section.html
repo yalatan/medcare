@@ -18,7 +18,7 @@
         <section class="form_section" id="form_section">
             <div class="wrapper_form_section wrapper">
 
-                <form class="form" action="#">
+                <form class="form" action="#" enctype="multipart/form-data" method="post">
                     <div class="content_form small_text main_text_color">
                         <label class="form_label" for="name"><p>Имя и Фамилия</p>
                             <input type="text" placeholder="Василий Иванов" name="name" id="name">
@@ -64,12 +64,13 @@
                                 placeholder="Kраткое описание заявки"></textarea></label> <br>
                         <div class="form_wrap_addinfo">
                             <a href="#" class="upload_file">
-                                <label class="main_text_color">   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <label class="main_text_color" for="file">   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 9V21C10.5 23.25 12.75 25.5 15 25.5C17.25 25.5 19.5 23.25 19.5 21V9H21V21C21 24 18 27 15 27C12 27 9 24 9 21V9V7.5C9 5.25 11.25 3 13.5 3C15.75 3 18 5.25 18 7.5V18V19.5C18 21 16.5 22.5 15 22.5C13.5 22.5 12 21 12 19.5V9H13.5V19.5C13.5 20.25 14.25 21 15 21C15.75 21 16.5 20.25 16.5 19.5V18V9V7.5C16.5 6 15 4.5 13.5 4.5C12 4.5 10.5 6 10.5 7.5V9Z" fill="#3085EA"/>
                                         </svg>
-
-                               <input type="file"> Прикрепить файлы </label>
+                                        Прикрепить файлы </label>
+                                <input type="file" name="file" multiple id="file">
                             </a>
+                            <div id="files"></div>
                             <div id="info_form" class="info_form">
                                 <div><span class="main_color" id="info_form_text">Дополнительная информация
                                     </span><br>

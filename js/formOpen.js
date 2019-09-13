@@ -12,8 +12,17 @@
         $('body').on('change', '.service_form select', function() {
 
             $('.service_form select').css({ color: "#4C6481" });
-        })
+        });
+        $('body').on('change', '#file', function() {
+            let filesArr = [];
+            filesArr.push($(this).val());
+            console.log(files);
+            filesArr.forEach(function(item) {
+                    $('body #files').append("<p>" + item + "</p>")
+                }
 
+            );
+        });
 
     });
 })(jQuery);

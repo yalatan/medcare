@@ -1,19 +1,17 @@
 (function($) {
     $(document).ready(function() {
-        console.log("slider");
+
         /*slider*/
         /* Слайдшоу */
 
         $('body .owl-carousel.slideshow').owlCarousel({
             items: 1,
-            loop: true
-                /*,
-
-                            autoplay: true,
-                            autoplayTimeout: 2000,
-                            autoplayHoverPause: true*/
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
         });
-        $('body .slide_clinics').owlCarousel({
+        $('body .owl-carousel.slide_clinics').owlCarousel({
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
@@ -28,15 +26,17 @@
                 0: {
                     items: 1
                 },
-                600: {
+                700: {
                     items: 2
                 },
-                1000: {
+                955: {
+                    items: 3
+                },
+                1100: {
                     items: 4
                 }
             }
         });
-
 
 
     });

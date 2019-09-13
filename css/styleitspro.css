@@ -221,7 +221,8 @@
                 line-height: 22px;
                 /* identical to box height */
                 letter-spacing: 0.04em;
-                color: #E5E5E5;
+                /*  color: #E5E5E5;*/
+                color: #ffffff;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -931,11 +932,15 @@
             }
             
             input[type=file] {
-                width: 0.1px;
+                /*  width: 0.1px;
                 height: 0.1px;
                 opacity: 0;
                 position: absolute;
-                z-index: -10;
+                z-index: -10;*/
+                width: 100px;
+                height: 30px;
+                opacity: 1;
+                z-index: 0;
             }
             
             .form_wrap_addinfo {
@@ -1758,9 +1763,9 @@
                     margin-top: 30px;
                 }
                 /*clinic*/
-                .clinics_section button {
+                /* .clinics_section button {
                     width: 90vw;
-                }
+                }*/
                 .clinics.wrapper {
                     max-width: 90%;
                     width: 90%;
@@ -1778,6 +1783,7 @@
                 }
                 .reviews_section_div {
                     width: 30%;
+                    height: 500px;
                 }
                 /*faq*/
                 .faq_section.wrapper {
@@ -1799,14 +1805,14 @@
                     margin-bottom: 10px;
                 }
                 .faq_section_buttons {
-                    display: flex;
+                    /*   display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: center;*/
                 }
                 .faq_section_buttons button {
-                    width: 90vw;
-                    margin-bottom: 20px;
+                    /*   width: 90vw;
+                    margin-bottom: 20px;*/
                 }
                 .footer_wrapper {
                     width: 90%;
@@ -1830,6 +1836,9 @@
                     max-width: 40%;
                     min-width: 290px;
                     width: 40%;
+                }
+                .owl-carousel.slide_clinics {
+                    width: calc(100% - 80px);
                 }
             }
             
@@ -1881,10 +1890,9 @@
                     margin-top: 5px;
                     width: 50%;
                 }
-                /* .header_logo svg {
-                    width: 100%;
-                    height: auto;
-                }*/
+                .header_logo svg {
+                    padding-bottom: 15px;
+                }
                 .header .menu {
                     height: 100%;
                     display: flex;
@@ -1918,9 +1926,9 @@
                     display: flex;
                     flex-direction: column;
                 }
-                .slideshow_btn {
+                /* .slideshow_btn {
                     width: 80vw;
-                }
+                }*/
                 .item {
                     height: 760px;
                     background-position-x: 0;
@@ -1935,6 +1943,7 @@
                 .about_us_section>p.header2 {
                     display: block;
                     text-align: center;
+                    margin-bottom: 30px;
                 }
                 .about_us_section_wrapper_text>p.header2 {
                     display: none;
@@ -1954,6 +1963,8 @@
                 /*why us*/
                 .why_us_section_number {
                     font-size: 36px;
+                    line-height: 39px;
+                    margin-bottom: 0px;
                 }
                 .why_us_section_div .header4 {
                     font-size: 18px;
@@ -1970,6 +1981,7 @@
                 }
                 .why_us_section {
                     background-size: auto 100%;
+                    margin-bottom: 0px;
                 }
                 /*specialization*/
                 .specialization_section_div {
@@ -1981,12 +1993,12 @@
                 }
                 /*howitwork*/
                 .how_works_section_div {
-                    max-width: 90%;
-                    min-width: 90%;
-                    width: 90%;
+                    max-width: 315px;
+                    min-width: 290px;
+                    width: 45%;
                 }
                 .how_work {
-                    justify-content: center;
+                    justify-content: space-around;
                 }
                 /*form*/
                 .wrapper_form_section {
@@ -2034,21 +2046,16 @@
                     margin-top: 30px;
                 }
                 /*clinic*/
-                .clinics_section button {
-                    width: 90vw;
+                .slide_image.item {
+                    height: 261px;
                 }
-                /*reviews*/
-                .reviews {
-                    justify-content: center;
-                    text-align: center;
-                    width: 100%;
-                    flex-wrap: wrap;
+                .slide_clinics .owl-item {
+                    width: 300px;
                 }
-                .reviews_section_div {
-                    width: 90%;
-                    height: 340px;
-                    padding-right: 0px;
-                    padding-left: 0px;
+                .wrapper_slide_clinics {
+                    width: 85%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 /*faq*/
                 .faq_section.wrapper {
@@ -2076,7 +2083,7 @@
                     justify-content: center;
                 }
                 .faq_section_buttons button {
-                    width: 90vw;
+                    /*  width: 90vw;*/
                     margin-bottom: 20px;
                 }
                 /*specialization*/
@@ -2164,6 +2171,9 @@
                 }
                 .menu_open_block .header4 {
                     margin-bottom: 15px;
+                }
+                .menu_open .block_socials {
+                    display: none;
                 }
                 /**/
                 .search .menu_open {
@@ -2268,4 +2278,41 @@
             
             * {
                 box-sizing: border-box;
+            }
+            
+            @media screen and (min-width: 319px) and (max-width: 558px) {
+                /*reviews*/
+                .reviews {
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                    flex-wrap: wrap;
+                }
+                .reviews_section_div {
+                    width: 90%;
+                    height: 340px;
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+            }
+            
+            @media screen and (min-width: 559px) and (max-width: 758px) {
+                /*reviews*/
+                .reviews {
+                    width: 100%;
+                }
+                .review .reviews {
+                    justify-content: space-around;
+                    width: 100%;
+                }
+                .reviews_section_div {
+                    width: 50%;
+                }
+                .reviews_section_div:last-child {
+                    display: none;
+                }
+                /*menu open*/
+                .menu_open.wrapper {
+                    width: 70%;
+                }
             }
