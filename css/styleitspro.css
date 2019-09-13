@@ -871,6 +871,8 @@
                 border-radius: 30px;
                 outline: none;
                 padding-left: 29px;
+                -webkit-appearance: none;
+                color: #E5E5E5;
             }
             
             option {
@@ -1715,7 +1717,7 @@
                 .header_navigation .wrap_contacts {
                     display: none;
                 }
-                .header_navigation .menu a:first-child {
+                .header_navigation .menu>a {
                     display: none;
                 }
                 .header .header_logo {
@@ -1747,7 +1749,7 @@
                     width: 100%;
                 }
                 .slider_content {
-                    margin-top: 230px;
+                    margin-top: 140px;
                     height: 100%;
                     width: 100%;
                     display: flex;
@@ -1767,6 +1769,11 @@
                     height: 760px;
                     background-position-x: 0;
                     background-position-y: 0;
+                }
+                .owl-dots {
+                    left: 50%;
+                    margin-right: -50%;
+                    transform: translate(-50%, -50%);
                 }
                 /*about us*/
                 .about_us_section>p.header2 {
