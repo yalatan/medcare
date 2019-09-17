@@ -25,7 +25,7 @@
                         </label>
                         <label class="country_form  form_label"><p >Страна проживания </p>
                             <select>
-                                <option disabled selected style="background: #6CEEDB; color: #FFF;">Выберите страну</option>
+                                <option value="" hidden disabled selected >Выберите страну</option>
                                 <option class="country_form_option">Албания</option>
                                 <option class="country_form_option" >Беларусь</option>
                                 <option class="country_form_option">Гондурас</option>
@@ -42,7 +42,7 @@
                         </div>
                         <label class="service_form form_label"><p>Услуга </p>
                             <select >
-                                <option disabled selected style="background: #6CEEDB; color: #FFF;"> Услуга</option>
+                                <option value="" hidden disabled selected > Услуга</option>
                                 <option> Офтальмология</option>
                                 <option> Ортопедия</option>
                                 <option>Стоматология</option>
@@ -62,6 +62,7 @@
                             </select> </label><br>
                         <label class="textarea_form form_label">Краткое описание заявки <br><textarea
                                 placeholder="Kраткое описание заявки"></textarea></label> <br>
+                        <div id="files"></div>
                         <div class="form_wrap_addinfo">
                             <a href="#" class="upload_file">
                                 <label class="main_text_color" for="file">   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +71,7 @@
                                         Прикрепить файлы </label>
                                 <input type="file" name="file" multiple id="file">
                             </a>
-                            <div id="files"></div>
+
                             <div id="info_form" class="info_form">
                                 <div><span class="main_color" id="info_form_text">Дополнительная информация
                                     </span><br>

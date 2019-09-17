@@ -15,7 +15,10 @@
         });
         $('body').on('change', '#file', function() {
             let filesArr = [];
-            filesArr.push($(this).val());
+            /* filesArr.push($(this).val());*/
+            let d = document.getElementById("file").files[0].name;
+
+            filesArr.push(d);
             console.log(files);
             filesArr.forEach(function(item) {
                     $('body #files').append("<p>" + item + "</p>")
@@ -23,6 +26,7 @@
 
             );
         });
+
 
     });
 })(jQuery);
