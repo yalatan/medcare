@@ -985,7 +985,7 @@
                     
                     .form_wrap_addinfo {
                         display: flex;
-                        align-items: center;
+                        align-items: flex-start;
                         justify-content: space-between;
                         margin-top: 7px;
                     }
@@ -1039,6 +1039,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: left;
+                        margin-top: 7px;
                     }
                     
                     .button_div {
