@@ -14,12 +14,18 @@
             var el = $(this);
             var dest = el.attr('href'); // получаем направление
             console.log(dest);
-            if (dest !== undefined && dest !== '') { // проверяем существование
-                $('html').animate({
-                        scrollTop: $(dest).offset().top - 100 // прокручиваем страницу к требуемому элементу
-                    }, 1000 // скорость прокрутки
-                );
-            }
+            /*   if (dest !== undefined && dest !== '') { // проверяем существование
+                   $('html').animate({
+                           scrollTop: $(dest).offset().top - 100 // прокручиваем страницу к требуемому элементу
+                       }, 1000 // скорость прокрутки
+                   );
+               }*/
+
+            window.scrollTo({
+                top: $(dest).offset().top - 100,
+                behavior: "smooth"
+            });
+
             return false;
         });
 
