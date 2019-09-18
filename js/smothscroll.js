@@ -8,7 +8,8 @@
                 behavior: "smooth"
             });
         });
-        $('body').on('click', '.flowing-scroll', function() {
+        $('body').on('click', '.flowing-scroll', function(event) {
+            event.preventDefault();
             console.log("scroll");
             var el = $(this);
             var dest = el.attr('href'); // получаем направление
