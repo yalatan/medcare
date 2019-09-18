@@ -13,6 +13,7 @@
                     $("#search_open_wrapper").offset({ top: $(".header_wrapper").height() + $(window).scrollTop() });
                     $("body .menu .button_blue").hide();
                 } else { // Иначе
+                    console.log($(window).scrollTop());
                     $("body .containerwidth100vw").css({ 'backgroundColor': '#ffffff' }).height(60);
                     $("#menu_open_wrapper").offset({ top: $(".header_wrapper").height() + $(window).scrollTop() });
                     $("#search_open_wrapper").offset({ top: $(".header_wrapper").height() + $(window).scrollTop() });
