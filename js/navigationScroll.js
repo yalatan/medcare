@@ -3,7 +3,9 @@
 
         function lpHeader() {
             if ($(window).width() > 758) {
+                console.log($(window).width());
                 if ($(window).scrollTop() == 0) {
+                    console.log($(window).scrollTop());
                     $("body .containerwidth100vw").css({ 'backgroundColor': 'transparent;' });
                     $("body .header .header_logo").css({ 'padding': '0' }).height("auto").css("marginTop", 20);
                     $("body .header_navigation .wrap_contacts").show();
