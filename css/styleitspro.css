@@ -2411,7 +2411,7 @@
                             margin-top: 0px;
                             margin-bottom: 0px;
                         }
-                        .reviews {
+                        .reviews_section .reviews {
                             width: 100%;
                             grid-template-columns: repeat(2, 1fr);
                             grid-template-rows: 30px auto 50px 30px;
@@ -2508,6 +2508,14 @@
                     @media screen and (min-width: 319px) and (max-width: 558px) {
                         /*reviews*/
                         .reviews {
+                            justify-content: center;
+                            text-align: center;
+                            width: 100%;
+                            flex-wrap: wrap;
+                            display: flex;
+                            margin-bottom: 0px;
+                        }
+                        .reviews_section .reviews {
                             justify-content: center;
                             text-align: center;
                             width: 100%;
