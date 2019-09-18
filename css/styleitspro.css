@@ -2003,8 +2003,11 @@
                             width: 100vw;
                             height: 60px;
                             background: #FFFFFF;
-                            box-shadow: 0px 4px 4px rgba(1, 50, 107, 0.2);
+                            /*  box-shadow: 0px 4px 4px rgba(1, 50, 107, 0.2);*/
                             position: absolute;
+                        }
+                        .header {
+                            box-shadow: 0px 4px 4px rgba(1, 50, 107, 0.2);
                         }
                         .header_index {
                             height: auto;
@@ -2025,7 +2028,7 @@
                             display: none;
                         }
                         .header .header_logo {
-                            margin-top: 5px;
+                            margin-top: 0px;
                             width: 50%;
                         }
                         .header_logo svg {
@@ -2460,7 +2463,7 @@
                             width: 100%;
                         }
                         .header {
-                            width: 100%%;
+                            width: 100%;
                             left: 0px;
                         }
                         body {
