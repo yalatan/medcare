@@ -782,6 +782,8 @@
                         text-align: center;
                         width: 100%;
                         margin-bottom: 113px;
+                        margin-top: 90px;
+                        -webkit-margin-collapse: collapse;
                     }
                     
                     .how_work {
@@ -1701,6 +1703,7 @@
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: space-between;
+                        margin-top: 60px;
                     }
                     
                     .specialization_article .wrapper img {
@@ -1817,6 +1820,20 @@
                         background: black;
                         z-index: 11;
                         opacity: 0.7;
+                    }
+                    /*search result*/
+                    
+                    p.request {
+                        margin-top: 35px;
+                        margin-bottom: 56px;
+                    }
+                    
+                    .result {
+                        margin-bottom: 20px;
+                    }
+                    
+                    .result a p {
+                        margin-bottom: 9px;
                     }
                     
                     @media screen and (min-width: 310px) and (max-width: 1440px) {
