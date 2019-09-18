@@ -377,6 +377,14 @@
                         justify-content: space-between;
                         position: relative;
                         box-sizing: border-box;
+                        align-items: center;
+                    }
+                    
+                    .header .header_logo {
+                        display: flex;
+                        align-items: center;
+                        padding-left: 15px;
+                        justify-content: flex-start;
                     }
                     
                     .header_logo {
@@ -1469,7 +1477,7 @@
                     
                     .menu_drop .dark_akcent_color {
                         width: 60px;
-                        height: 60px;
+                        height: 61px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -1740,9 +1748,9 @@
                     
                     .button_up_and_reviews {
                         position: fixed;
-                        bottom: 95px;
-                        right: 15px;
-                        z-index: 100;
+                        bottom: 5px;
+                        right: 10px;
+                        z-index: 100
                     }
                     
                     .button_up_and_reviews svg {
@@ -2007,8 +2015,8 @@
                             min-width: 100%;
                         }
                         .header_wrapper {
-                            width: 95vw;
-                            margin-left: 5vw;
+                            width: 100vw;
+                            /*   margin-left: 5vw;*/
                         }
                         .header_navigation .wrap_contacts {
                             display: none;
@@ -2021,7 +2029,6 @@
                             width: 50%;
                         }
                         .header_logo svg {
-                            padding-bottom: 5px;
                             width: auto;
                             height: 50px;
                             max-height: 50px;
@@ -2247,7 +2254,7 @@
                         }
                         /*footer*/
                         .footer {
-                            padding-bottom: 60px;
+                            padding-bottom: 40px;
                         }
                         .footer .header_logo,
                         .footer .footer_menu {
@@ -2561,6 +2568,11 @@
                         .third.header6 {
                             display: block;
                             width: 100%;
+                        }
+                        .how_works_section_div {
+                            max-width: 90%;
+                            min-width: 250px;
+                            width: 90%;
                         }
                     }
                     
